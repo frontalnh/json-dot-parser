@@ -1,1 +1,1 @@
-export function removeDotInJson(target: any): void;
+export function removeDotInJson(target: any): any;
