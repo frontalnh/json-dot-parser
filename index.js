@@ -16,7 +16,8 @@ function removeDotInJson(target) {
     }
 
     iterRef[last] = target[key];
-    delete result[key];
+
+    if (key.includes('.')) delete result[key];
   }
 
   return result;
