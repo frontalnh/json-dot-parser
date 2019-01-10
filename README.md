@@ -18,12 +18,6 @@ let data = {
   'c.b': 'b'
 };
 
-let result = removeDotInJson(data);
-console.log(result); // {a:"a",b:"b",c:{a:"a",b:"b"}}
-
-// or
-
-Object.assign(data, removeDotInJson(data));
-
+removeDotInJson(data);
 console.log(data); // {a:"a",b:"b",c:{a:"a",b:"b"}}
 ```

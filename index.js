@@ -1,6 +1,6 @@
 function removeDotInJson(target) {
-  let result = {};
-  Object.assign(result, target);
+  let result = target;
+  // Object.assign(result, target);
 
   for (let key in target) {
     let parts = key.split('.');
@@ -15,8 +15,8 @@ function removeDotInJson(target) {
       iterRef = iterRef[part];
     }
 
-    delete result[key];
     iterRef[last] = target[key];
+    delete result[key];
   }
 
   return result;
