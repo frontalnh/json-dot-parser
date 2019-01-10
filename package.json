@@ -1,6 +1,6 @@
 {
   "name": "@frontalnh/json-dot-parser",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Converts json object whick has key written in dot notation to plain json object",
   "main": "index.js",
   "repository": "frontalnh/json-dot-parser",
